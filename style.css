@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;  
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+
+  background: linear-gradient(135deg, 
+      #ffd6e8, 
+      #ffeecd, 
+      #d7f9ff, 
+      #e3f4ff
+  );
+  background-size: cover;
+}
+
+h2, #taskInput, #addBtn, #tasks {
+  width: 80vw;
+  max-width: 500px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 70%;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#addBtn {
+  padding: 12px 20px;
+  margin-left: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+#addBtn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+#tasks {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#tasks li {
+ 
+  padding: 14px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(248, 200, 216, 0.45),  /* darker pastel pink */
+    rgba(247, 217, 185, 0.45),  /* peach */
+    rgba(201, 216, 245, 0.45),  /* blue */
+    rgba(201, 243, 226, 0.45)   /* mint */
+  );
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #333;
+  box-shadow:
+    0 6px 20px rgba(0,0,0,0.12),
+    0 3px 6px rgba(0,0,0,0.08);
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 6px 16px rgba(0,0,0,0.1),
+    0 3px 6px rgba(0,0,0,0.06);
+}
+
+
+#tasks li.done {
+  text-decoration: line-through;
+  color: #777;
+}
+
+button.delete {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.doneBtn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.2s ease;
+}
+
+.doneBtn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
